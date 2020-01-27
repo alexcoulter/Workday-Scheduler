@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta charset="UTF-8">
+  <title>Work Day Scheduler</title>
+  <!--<script type="text/javascript" src="./assets/js/moment.js"></script>-->
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script type="text/javascript" src="./assets/js/script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class = "container-fluid text-center pt-5 pb-5">
+    <h1>Work Day Scheduler</h1>
+    <p>An houry calendar app for scheduling your workday</p>
+    <p id = "date"></p>
+    <p id = "time"></p>
+  </header>
+
+  <main class = "container mt-4 mb-4">
+    <div class = "row">
+      <div class = "column col-md-1 col-sm-12 time-label hour1"><p>9 AM</p></div>
+      <div class = "column col-md-10 col-sm-12  text-area hour1"><textarea class="form-control" id="textArea1" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12  save-button hour1"><button id = "hour1"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>10 AM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea2" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour2"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row" id = "hour3">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>11 AM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea3" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour3"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row" id = "hour4">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>12 PM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea4" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour4"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row" id = "hour5">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>1 PM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea5" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour5"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row" id = "hour6">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>2 PM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea6" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour6"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row" id = "hour7">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>3 PM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea7" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour7"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row" id = "hour8">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>4 PM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea8" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour8"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+    <div class = "row" id = "hour9">
+      <div class = "column col-md-1 col-sm-12 time-label"><p>5 PM</p></div>
+      <div class = "column col-md-10 col-sm-12 text-area"><textarea class="form-control" id= "textArea9" rows="3"></textarea></div>
+      <div class = "column col-md-1 col-sm-12 save-button"><button id = "hour9"><i class="fa fa-lock" aria-hidden="true"></i></button></div>
+    </div>
+  
+
+
+
+
+  </main>
+
+
+</body>
+
+</html>
