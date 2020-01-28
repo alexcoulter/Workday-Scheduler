@@ -19,6 +19,8 @@ $("#time").text(moment().format('h:mm: a'));
 setInterval(function() {
   var time = moment().format('h:mm: a');
   $("#time").text(time);
+  colorTextBoxes();
+
 }, 10000);
 
 
@@ -31,26 +33,7 @@ setInterval(function() {
 
    });
 
-   //Changes color of text box depending on if that time is in the future, past, or present hour
-   var hour = parseFloat(moment().format('h'));  
-   var amOrPm = moment().format('a');
-   console.log(hour, amOrPm);
-   if (amOrPm === "pm" && hour !== 12) {                 //sets the hour to army time so we can compare to our scheduler
-     hour += 12;                                    
-   }
-   else if (amOrPm === "am" && hour === 12) {
-     hour = 0; 
-   }
    
-   for(var i = 1; i < 10; i++) {
-      if(hour === i + 8) {                            //add 8 to i since hour1 is 9am (1 + 8 = 9)
-        $("#textArea" + i).addClass("present");
-      }
-      if(hour < i + 8 ) {
-        $("#textArea" + i).addClass("future");
-      }
-     
-   }
     //Clear button clears the whole scheduler
    $("#clearButton").on("click", function(){
      console.log("hey");
@@ -60,7 +43,28 @@ setInterval(function() {
     }
 
    });
+ //Changes color of text box depending on if that time is in the future, past, or present hour
+ function colorTextBoxes() {
+ var hour = parseFloat(moment().format('h'));  
+ var amOrPm = moment().format('a');
+ console.log(hour, amOrPm);
+ if (amOrPm === "pm" && hour !== 12) {                 //sets the hour to army time so we can compare to our scheduler
+   hour += 12;                                    
+ }
+ else if (amOrPm === "am" && hour === 12) {
+   hour = 0; 
+ }
+ 
+ for(var i = 1; i < 10; i++) {
+    if(hour === i + 8) {                            //add 8 to i since hour1 is 9am (1 + 8 = 9)
+      $("#textArea" + i).addClass("present");
+    }
+    if(hour < i + 8 ) {
+      $("#textArea" + i).addClass("future");
+    }
    
-
+ }
+ }
+colorTextBoxes();
 
 });

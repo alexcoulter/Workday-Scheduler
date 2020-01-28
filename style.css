@@ -23,18 +23,18 @@ p {
   text-align:center;
   background-color: rgba(0,255,255,0.2);
   border-radius: 10px;
-  border: 2px solid grey;
+  border: 2px dashed grey;
 }
 
 .clear button {
   background-color: aquamarine;
   border-radius: 10px;
-  border: 2px solid gray;
+  
 }
 
 .fa-calendar-times-o {
   font-size: 24px;
-  padding:15px;
+  padding:10px 16px;
   color:white;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
