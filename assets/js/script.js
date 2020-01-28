@@ -51,6 +51,15 @@ setInterval(function() {
       }
      
    }
+    //Clear button clears the whole scheduler
+   $("#clearButton").on("click", function(){
+     console.log("hey");
+    localStorage.clear();
+    for(var i = 1; i < 10; i++) {
+      $("#textArea" + i).val("");
+    }
+
+   });
    
 
 

@@ -18,8 +18,39 @@ p {
   text-align: center;
 }
 
-main {
-  
+.clear {
+  margin:0 auto;
+  text-align:center;
+  background-color: rgba(0,255,255,0.2);
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+
+.clear button {
+  background-color: aquamarine;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+.fa-calendar-times-o {
+  font-size: 24px;
+  padding:15px;
+  color:white;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-transition: 0.8s ease-out;
+    -moz-transition:  0.8s ease-out;
+    transition:  0.8s ease-out;
+}
+.clear button:hover {
+  background-color:rgb(35, 189, 194);
+}
+
+.clear button:hover .fa-calendar-times-o {
+  -webkit-transform: rotateZ(360deg);
+      -moz-transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
 }
 
 .time-label {
@@ -74,10 +105,19 @@ main {
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  -webkit-transition: 0.8s ease-out;
+    -moz-transition:  0.8s ease-out;
+    transition:  0.8s ease-out;
+}
+
+.save-button button:hover .fa-lock {
+  -webkit-transform: rotateZ(360deg);
+      -moz-transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
 }
 
 .save-button button:hover {
-  background-color:aqua;
+  background-color:rgb(35, 189, 194);
 }
 
 .present {
