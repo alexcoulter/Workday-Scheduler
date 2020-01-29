@@ -1,13 +1,18 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 header {
-  border-bottom:5px solid black;
-  background-color: rgba(0,255,255,0.2);
+  border-bottom: 5px solid black;
+  background-color: #DFE5E4;
 }
 
 header h1 {
-  color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  font-size: 45px;
+  font-weight: bolder;
+  -webkit-text-fill-color: aquamarine;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: grey;
 }
 
 header p {
@@ -19,9 +24,9 @@ p {
 }
 
 .clear {
-  margin:0 auto;
-  text-align:center;
-  background-color: rgba(0,255,255,0.2);
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.2);
   border-radius: 10px;
   border: 2px dashed grey;
 }
@@ -29,72 +34,73 @@ p {
 .clear button {
   background-color: aquamarine;
   border-radius: 10px;
-  
+  border: 1px solid grey;
 }
 
 .fa-calendar-times-o {
   font-size: 24px;
-  padding:10px 16px;
-  color:white;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  padding: 10px 16px;
+  color: white;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-transition: 0.8s ease-out;
-    -moz-transition:  0.8s ease-out;
-    transition:  0.8s ease-out;
+  -moz-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
 }
+
 .clear button:hover {
-  background-color:rgb(35, 189, 194);
+  background-color: rgb(35, 189, 194);
 }
 
 .clear button:hover .fa-calendar-times-o {
   -webkit-transform: rotateZ(360deg);
-      -moz-transform: rotateZ(360deg);
-      transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 
 .time-label {
   border-top: 2px dotted gray;
   border-right: 2px solid grey;
-  height:80px;
+  height: 80px;
 }
+
 .form-control {
-  background-color: lightgray;
+  background-color: #E8F0EE;
   border: none;
   overflow: auto;
   margin: 0;
   padding: 10px;
-  padding-bottom:15px;
+  padding-bottom: 15px;
   resize: none;
-  height:80px;
+  height: 80px;
 }
 
-.form-control:focus{
-  background-color: lightgray;
-  
+.form-control:focus {
+  background-color: #E8F0EE;
 }
 
 .text-area {
   border-bottom: 1px solid white;
-  background-color: lightgray;
+  background-color: #E8F0EE;
   margin: 0;
   padding: 0;
 }
 
-
 .save-button {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .save-button button {
-  width:100%;
-  padding:0;
-  height:80px;
-  background-color:aquamarine;
+  width: 100%;
+  padding: 0;
+  height: 80px;
+  background-color: aquamarine;
   border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;  
-  border:2px solid grey;
+  border-bottom-right-radius: 25px;
+  border: 2px solid grey;
   border-bottom: 1px solid white;
   border-left: 3px solid grey;
 }
@@ -102,22 +108,30 @@ p {
 .fa-lock {
   color: white;
   font-size: 24px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-transition: 0.8s ease-out;
-    -moz-transition:  0.8s ease-out;
-    transition:  0.8s ease-out;
+  -moz-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
 }
 
 .save-button button:hover .fa-lock {
   -webkit-transform: rotateZ(360deg);
-      -moz-transform: rotateZ(360deg);
-      transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 
 .save-button button:hover {
-  background-color:rgb(35, 189, 194);
+  background-color: rgb(35, 189, 194);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .present {
@@ -129,11 +143,11 @@ p {
 }
 
 .future {
-  background-color: greenyellow;
+  background-color: #96F287;
 }
 
-.future:focus{
-  background-color: greenyellow;
+.future:focus {
+  background-color: #96F287;
 }
 
 @media only screen and (max-width: 768px) {
@@ -141,9 +155,8 @@ p {
     height: 30px;
     border: 2px solid grey;
   }
-
   .save-button button {
     height: 30px;
     border-radius: 25px;
-}
+  }
 }
