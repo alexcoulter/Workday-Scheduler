@@ -132,6 +132,10 @@ p {
   top: 50%;
 }
 
+.modal button {
+  color: black;
+}
+
 .present {
   background-color: pink;
 }
