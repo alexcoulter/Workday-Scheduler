@@ -2,6 +2,10 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+p {
+  text-align: center;
+}
+
 header {
   border-bottom: 5px solid black;
   background-color: #DFE5E4;
@@ -12,21 +16,18 @@ header h1 {
   font-weight: bolder;
   -webkit-text-fill-color: aquamarine;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: grey;
+  -webkit-text-stroke-color: gray;
 }
 
 header p {
   font-size: 25px;
 }
+
 .date {
   font-weight: bolder;
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: grey;
-}
-
-p {
-  text-align: center;
+  -webkit-text-stroke-color: gray;
 }
 
 .clear {
@@ -34,21 +35,19 @@ p {
   text-align: center;
   background-color: rgba(0, 255, 255, 0.2);
   border-radius: 10px;
-  border: 2px dashed grey;
+  border: 2px dashed gray;
 }
 
 .clear button {
   background-color: aquamarine;
   border-radius: 10px;
-  border: 1px solid grey;
+  border: 2px solid gray;
 }
 
 .fa-calendar-times-o {
   font-size: 24px;
   padding: 10px 16px;
-  color: white;
   -webkit-text-fill-color: white;
-  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-transition: 0.8s ease-out;
@@ -68,7 +67,7 @@ p {
 
 .time-label {
   border-top: 2px dotted gray;
-  border-right: 2px solid grey;
+  border-right: 2px solid gray;
   height: 80px;
 }
 
@@ -106,16 +105,14 @@ p {
   background-color: aquamarine;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  border: 2px solid grey;
+  border: 2px solid gray;
   border-bottom: 1px solid white;
-  border-left: 3px solid grey;
+  border-left: 3px solid gray;
 }
 
 .fa-lock {
-  color: white;
   font-size: 24px;
   -webkit-text-fill-color: white;
-  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-transition: 0.8s ease-out;
@@ -142,27 +139,18 @@ p {
   color: black;
 }
 
-.present {
+.present, .present:focus {
   background-color: pink;
 }
 
-.present:focus {
-  background-color: pink;
-}
-
-.future {
+.future, .future:focus {
   background-color: #96F287;
 }
-
-.future:focus {
-  background-color: #96F287;
-}
-
 
 @media only screen and (max-width: 767px) {
   .time-label {
     height: 30px;
-    border: 2px solid grey;
+    border: 2px solid gray;
     color: white;
     background-color: rgb(35, 189, 194);
   }
@@ -171,6 +159,6 @@ p {
     border-radius: 0px;
   }
   .text-area {
-    border: 2px solid grey;
+    border: 2px solid gray;
   }
 }

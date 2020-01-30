@@ -13,27 +13,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css?iframe=1" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <!-- Header with title and Date / Time -->
+  <!-- Header with title and Date / Time -->
   <header class="container-fluid text-center pt-5 pb-5">
     <h1>Work Day Scheduler</h1>
     <p>An houry calendar app for scheduling your workday</p>
-    <p id="date" class = "date"></p>
+    <p id="date" class="date"></p>
   </header>
 
-   <!-- Text Areas for 9am - 5pm with submit buttons and labels -->
+  <!-- Text Areas for 9am - 5pm with submit buttons and labels -->
   <main class="container mt-4 mb-4">
     <div class="row">
       <div class="column col-md-1 col-sm-12 time-label hour1">
@@ -116,9 +116,9 @@
       <div class="column col-md-1 col-sm-12 save-button"><button id="hour9" class="saveButton"><i class="fa fa-lock"
             aria-hidden="true"></i></button></div>
     </div>
-
     <br>
-     <!-- Clear button container -->
+    
+    <!-- Clear button container -->
     <div class="clear container text-center pt-2 pb-2" id="clear">
       <h4 class="d-inline-block">Clear Schedule </h4>
       <!-- Button trigger modal -->
@@ -127,8 +127,7 @@
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
-       aria-hidden="true">
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
@@ -142,11 +141,7 @@
           </div>
         </div>
       </div>
-      </div>
-
+    </div>
   </main>
-
-
 </body>
-
 </html>
