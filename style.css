@@ -16,7 +16,7 @@ header h1 {
   font-weight: bolder;
   -webkit-text-fill-color: aquamarine;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: gray;
+  -webkit-text-stroke-color: black;
 }
 
 header p {
@@ -28,6 +28,9 @@ header p {
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: gray;
+  -moz-text-fill-color: black;
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: gray;
 }
 
 .clear {
@@ -50,6 +53,9 @@ header p {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  -moz-text-fill-color: white;
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: black;
   -webkit-transition: 0.8s ease-out;
   -moz-transition: 0.8s ease-out;
   transition: 0.8s ease-out;
@@ -115,6 +121,9 @@ header p {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  -moz-text-fill-color: white;
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: black;
   -webkit-transition: 0.8s ease-out;
   -moz-transition: 0.8s ease-out;
   transition: 0.8s ease-out;
