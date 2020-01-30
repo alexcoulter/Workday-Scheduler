@@ -16,7 +16,13 @@ header h1 {
 }
 
 header p {
-  font-size: 22px;
+  font-size: 25px;
+}
+.date {
+  font-weight: bolder;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: grey;
 }
 
 p {
@@ -152,13 +158,19 @@ p {
   background-color: #96F287;
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 767px) {
   .time-label {
     height: 30px;
     border: 2px solid grey;
+    color: white;
+    background-color: rgb(35, 189, 194);
   }
   .save-button button {
     height: 30px;
-    border-radius: 25px;
+    border-radius: 0px;
+  }
+  .text-area {
+    border: 2px solid grey;
   }
 }

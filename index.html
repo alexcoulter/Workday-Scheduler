@@ -13,18 +13,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?iframe=1" />
 </head>
 
 <body>
@@ -32,8 +30,7 @@
   <header class="container-fluid text-center pt-5 pb-5">
     <h1>Work Day Scheduler</h1>
     <p>An houry calendar app for scheduling your workday</p>
-    <p id="date"></p>
-    <p id="time"></p>
+    <p id="date" class = "date"></p>
   </header>
 
    <!-- Text Areas for 9am - 5pm with submit buttons and labels -->
@@ -131,7 +128,7 @@
 
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+       aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
@@ -144,6 +141,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
 
   </main>
