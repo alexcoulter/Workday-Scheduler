@@ -1,6 +1,6 @@
 # Work-Day-Scheduler
 
-https://alexcoulter.github.io/Work-Day-Scheduler/
+https://alexcoulter.github.io/Workday-Scheduler/
 
 ## User Story
 
